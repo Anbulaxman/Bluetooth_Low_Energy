@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+            android:id="@+id/btnStartSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Sensor" />
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3c3c3c"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:text="Disconnected"
+        android:textColor="#ffffff" />
+    
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/btnStartSensor"
+        android:layout_above="@id/textStatus"
+        android:layout_height="fill_parent">
+        
+    </FrameLayout>
+
+    
+</RelativeLayout>
